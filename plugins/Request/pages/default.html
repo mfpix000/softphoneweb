@@ -866,7 +866,7 @@
             return;
         }
 
-        const wsUrl = `${proto}//${location.host}:8888?fp=${fp}&ssrc=mic-user`;
+        const wsUrl = `${proto}//${location.host}/audio-ws?fp=${fp}&ssrc=mic-user`;
 
         // Fecha conexão anterior se existir
         if (websocket && websocket.readyState === WebSocket.OPEN) {

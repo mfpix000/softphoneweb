@@ -1,0 +1,23 @@
+{
+  "name": "spechphone",
+  "version": "1.0.0",
+  "description": "SpechPhone - Modern SIP/VoIP Softphone",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server.ts",
+    "build": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "start": "tsx server.ts"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "@types/ws": "^8.5.13",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

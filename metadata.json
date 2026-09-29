@@ -1,0 +1,8 @@
+{
+  "name": "SpechPhone - Modern SIP/VoIP Softphone",
+  "description": "High-performance web softphone and SIP client with dialer, codec selection, audio controls, and configuration.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

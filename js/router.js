@@ -36,7 +36,7 @@ const infoURI = () => {
         host: host,
         port: port,
         path: path,
-        webSocketURI: () => `${(isSecure ? 'wss' : 'ws')}://${host}:${port}${path}`
+        webSocketURI: () => `${(isSecure ? 'wss' : 'ws')}://${window.location.host}${path}`
     }
 }
 
@@ -292,7 +292,7 @@ window.playAudio = (callId) => {
 
     // Determina protocolo WebSocket
     const protocol = window.location.protocol === "https:" ? "wss:" : "ws:";
-    const wsUrl = `${protocol}//${infoURI().host}:8888?fp=${callId}`;
+    const wsUrl = `${protocol}//${window.location.host}/audio-ws?fp=${callId}`;
 
     window.audioWS = new WebSocket(wsUrl);
     window.audioWS.binaryType = "arraybuffer";
